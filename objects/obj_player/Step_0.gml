@@ -42,7 +42,7 @@ if (!place_meeting(x, y + 1, obj_wall))
 {
 	sprite_index = spr_player_A
 	image_speed = 0;
-	if (sign(vsp) > 0) image_index = 1; else image_index = 0;
+	if (vsp <= 1) && (vsp >= -1) image_index = 2; else if (sign(vsp) > 0) image_index = 1; else image_index = 0;
 }
 else
 {
